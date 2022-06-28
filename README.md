@@ -26,21 +26,21 @@ This is a project which consist of Backend as well, We follow MVC model there to
 
 
 
-## About Our Project : 
+## About Project : 
 
 Our project is a clone of a www.pepperfry.com, where we can purchase home decor and all furniture products.
 
 ## Guide to Project:
 
-* Continuing to project we have build in unit-2, we have added backend functionalities, i.e we created our own API's and databases. 
+* Continuing to project I have build in unit-2, we have added backend functionalities, i.e we created our own API's and databases. 
 
 * Here we have stored products and users data, which is we are using to show in our webpages.
 
 * In this project we have implemented dynamic functionality which enables users to buy multiple products , and no static data has been used.
 
-* We also improved our Ui/Ux.
+* I also improved our Ui/Ux.
  
-* We have Implemented Sign Up and Login Functionality where we are storing users details in the mongoose atlas database.
+* I have Implemented Sign Up and Login Functionality where we are storing users details in the mongoose atlas database.
 
 * So this is basically our project. We were three members in the team and we completed the whole project in the construct week timeline.  
 
