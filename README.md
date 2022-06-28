@@ -4,16 +4,10 @@ Clone of "www.pepperfry.com".
 
 This website, www.pepperfry.com ("Site", “Website”) is owned and operated by Trendsutra Platform Services Private Limited
 .
-This is collaborative project which consist of Backend as well, We follow MVC model there to show our web pages, and for creating database We use mongoDB, for connecting mongoDb to the express we use Mongoose. And for backend we used Express in this project.  After this project we got a clear picture around backend of the e-Commerce site like how data is stored in API how to receive data in the view part and render on the webpage.
+This is a project which consist of Backend as well, We follow MVC model there to show our web pages, and for creating database We use mongoDB, for connecting mongoDb to the express we use Mongoose. And for backend we used Express in this project.  After this project we got a clear picture around backend of the e-Commerce site like how data is stored in API how to receive data in the view part and render on the webpage.
 
 #### Deployed Link 
  Click Here 👉 [pepperfry clone](https://pepperfrywebsite.herokuapp.com/products/home)
-
-## Team Members:
-* Tarun Singh Rawat
-* Bhaskar Rai
-* Rinku Bangale
-
 
 ## Tools & Technology Used:
 
