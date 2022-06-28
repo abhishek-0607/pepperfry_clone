@@ -1,0 +1,111 @@
+*{
+    font-family: 'Fira Sans', sans-serif;
+ 
+   
+}
+
+#head-cate-flex > div, #head-clip{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.head-cate-card{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:50px;
+}
+.head-cate-card h5{
+    margin: 0px;
+}
+h4{
+    margin-bottom: 0px;
+}
+
+.sort-div{
+    display: flex;
+    height: 5vw;
+}
+
+.dash{
+    background-color: #fee;
+}
+
+.outer-spaced{
+    display: grid;
+    background-color: #fff;
+    grid-template-columns: 10% 20% 70% 5%;
+    justify-content: center;
+    grid-gap: 50px;
+}
+
+.main-dash-content-filter{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.main-dash-content-card{
+    width: 100%;
+}
+.flex-input{
+    display: flex;
+    flex-direction: column;
+}
+
+#main-card{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 1%;
+    margin: 2px solid black;
+    justify-content: center;
+    margin-bottom:125px;
+}
+
+#main-card > div{
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    padding: 5%;
+}
+
+#main-card > div:hover{
+   
+    border-radius: 10px;
+    box-shadow: 1px 2px 20px 5px #aaa;    
+}
+
+#main-card > div > div{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+    overflow: hidden;
+}
+#main-card b:hover{
+    color: #0000cc;
+}
+#main-card > div > div > img{
+    cursor: pointer;
+    max-width: 350px;
+    margin: auto;
+    height: 200px;
+}
+
+#main-card > div > div > div span{
+    text-decoration: line-through;
+}
+
+#main-card > div > div > div a{
+    color: #f16521;
+}
+
+#main-card > div > div > div a > img{
+    fill:red
+}
+
+input,span{
+    cursor: pointer;
+}

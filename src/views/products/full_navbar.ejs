@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>full navbar</title>
+    <link rel="stylesheet" href="/static/products/allsofasPage.css">
+  <style>
+
+      
+#header{
+    width:90%;
+    margin:auto; 
+ }
+ #head1{
+     height:80px;
+     display:flex;
+     background-color: white;
+     position:fixed;
+     width:90%;
+     z-index: 999;
+     top:0;
+ }
+ #head1 img{
+     width:15%;
+ }
+ #search{
+     display:flex;
+     border:1px solid grey;
+     margin: 18px 35px;
+     width:130%;
+     border-radius:5px;
+     background-color: rgb(241, 235, 235);
+   
+ }
+ #search input{
+     width:90%;
+    background-color: rgb(241, 235, 235);
+     border-color: transparent;
+ }
+ #search img{
+     width: 40px;
+     padding:10px;
+ }
+ #options{
+ margin:10px 2px;
+ display:flex;
+ 
+ }
+ .items{
+    width:50px;
+     margin:5px;
+     justify-content: center;
+ align-items: center;
+    
+ }
+ #options .items img{
+     width: 20px;
+     height:20px;
+     margin: 5px;
+     
+  
+ } 
+ 
+ .items p{
+     color:rgb(0, 0, 0);
+    font-size: 13px;
+     margin-top:-5px;
+     margin-left:2px;
+ }
+ 
+ 
+ /* CSS of Dropdown part */
+ 
+ 
+ *{
+     box-sizing: border-box;
+     font-family: 'Roboto', sans-serif;
+     font-size: 15px;
+ }
+ nav{
+     position:fixed;
+     width:100%;
+     z-index:999;
+      margin-top: 60px; 
+    
+ }
+ nav .wrapper{
+     background-color:rgb(241, 237, 237);
+     max-width:90%;
+     padding:0 30px;
+     margin:auto;
+     margin-left:-10px;
+     margin-top:6px;
+     display:flex;
+     align-items:center;
+     box-shadow: border;
+ 
+ }
+ .wrapper .nav-links{
+      display:flex;
+      margin:-5px;
+ }
+ .nav-links li{
+     list-style: none;
+     padding: 17px 18px;
+ }
+ .nav-links li a{
+     color:rgb(3, 3, 3);
+     text-decoration: none; 
+ }
+ .nav-links li a:hover{
+ border-bottom: 3px solid orangered; 
+ color:rgb(179, 48, 0);
+ }
+ 
+ .nav-links li:hover .mega-box{
+ top:65px;   
+ opacity:1;
+ visibility: visible;
+ transition:all 0.3s ease;
+ 
+ }
+ .mega-box{
+ position:absolute;
+ top: 50px;
+ background:rgb(240, 231, 231);
+ width:90%;
+ left:0;
+ margin-left:70px;
+ opacity: 0;
+ visibility:hidden;
+ transition:all 0.3s ease;
+ 
+ 
+ }
+ .mega-box .content{
+ background:rgb(255, 250, 250);
+ padding:25px 20px;
+ display:flex; 
+ width:90%; 
+ justify-content: space-between;
+ }
+ .content .rowone header{
+ color:black;
+ font-size:20px;
+ font-weight:bold;
+ margin-left:20px;
+ 
+ }
+ .content .rowone .mega-links{
+ border-left:1px solid black;
+ }
+ .rowone .mega-links li{
+ padding:10px 10px;
+ }
+ .rowone .mega-links li a{
+ 
+ 
+ display:block;
+ }
+ 
+  </style>
+</head>
+<body>
+
+
+    
+<div id="header">
+    <div id="head1">
+        <img src="https://ii1.pepperfry.com/images/svg/pf-logo-jan18.svg?v=1">
+        <div id="search">
+            <input type="text"placeholder="Search">
+            <img src="https://image.flaticon.com/icons/png/128/482/482631.png">
+        </div>
+        <div id="options">
+            <div class="items">
+                <img src="https://ii1.pepperfry.com/images/svg/header-track-icon-2021.svg">
+                <p>Track</p>
+            </div>
+
+            <div class="items">
+                <img src="	https://ii1.pepperfry.com/images/svg/header-wishlist-icon-2021.svg">
+                <p>Wishlist</p>
+            </div>
+            <div class="items">
+                <img src="https://ii1.pepperfry.com/images/svg/header-cart-icon-2021.svg
+                ">
+                <p>Cart</p>
+            </div>
+            <div onclick="profile()"class="items">
+                <img src="	https://ii1.pepperfry.com/images/svg/header-profile-icon-2021.svg
+                ">
+                <p>Profile</p>
+            </div>
+           
+        </div>
+    </div>
+
+<!-- drop down -->
+
+<nav>
+    <div class="wrapper">
+     <ul class="nav-links">
+         <li>
+             <a href="#">Furniture</a>
+             <div class="mega-box">
+               <div class="content">
+                   <div class="rowone">
+                      <header>Sofas</header>  
+                      <ul class="mega-links">
+                          <li><a href="allSofas.html">Sofas</a></li>
+                          <li><a href="#">1-Seater sofas</a></li>
+                          <li><a href="#">2-Seater Sofas</a></li>
+                          <li><a href="#">3-seater Sofas</a></li>
+                          <li><a href="#">Sofa Sets</a></li>
+                          <li><a href="#">Sectional Sofas</a></li>
+                          <li><a href="#">Sofa cum beds  </a></li>
+                          <li><a href="#">Recliners</a></li>
+                          <li><a href="#">Sofa spa </a></li>
+                      </ul>
+                   </div>
+                <div class="rowone">
+                  <header>Seating</header>  
+                  <ul class="mega-links">
+                      <li><a href="#">Settees</a></li>
+                      <li><a href="#">Benches</a></li>
+                      <li><a href="#">Chaise Loungers</a></li>
+                      <li><a href="#">Recamiers</a></li>
+                      <li><a href="#">Ottamans</a></li>
+                      <li><a href="#">Pouffes</a></li>
+                      <li><a href="#">Foot Stools  </a></li>
+                      <li><a href="#">Swings</a></li>
+                      <li><a href="#">Hammocks</a></li>
+                  </ul>
+                </div> 
+                
+                <div class="rowone">
+                  <header>Chairs</header>  
+                  <ul class="mega-links">
+                      <li><a href="#">Arm Chairs</a></li>
+                      <li><a href="#">Rocking Chairs</a></li>
+                      <li><a href="#">Lounge Chairs</a></li>
+                      <li><a href="#">Cafe Chairs</a></li>
+                      <li><a href="#">Iconic Chairs</a></li>
+                      <li><a href="#">Slippers Chairs</a></li>
+                      <li><a href="#">Barrels Chairs  </a></li>
+                      <li><a href="#">Folding Chairs</a></li>
+                      <li><a href="#">Plastic Chairs</a></li>
+                  </ul>
+               </div>
+
+               <div class="rowone">
+                  <header>Tables</header>  
+                  <ul class="mega-links">
+                      <li><a href="#"> Coffee Tables</a></li>
+                      <li><a href="#">Coffee Tables Sets</a></li>
+                      <li><a href="#">End Tables</a></li>
+                      <li><a href="#">Nest Tables</a></li>
+                      <li><a href="#">Console Tables</a></li>
+                      <li><a href="#">Portable Tables</a></li>
+                      <li><a href="#">Study Tables </a></li>
+                      <li><a href="#">Dressing Tables</a></li>
+                      <li><a href="#">Office Tables</a></li>
+                  </ul>
+               </div>
+
+               <div class="rowone">
+                  <header>Sofas</header>  
+                  <ul class="mega-links">
+                      <li><a href="#">Sofas</a></li>
+                      <li><a href="#">1-Seater sofas</a></li>
+                      <li><a href="#">2-Seater Sofas</a></li>
+                      <li><a href="#">3-seater Sofas</a></li>
+                      
+                  </ul>
+               </div>
+
+               <div class="rowone">
+                  <header>Dining & Bar</header>  
+                  <ul class="mega-links">
+                      <li><a href="#">Dining Sets</a></li>
+                      <li><a href="#">Dining Chairs</a></li>
+                      <li><a href="#">Dining Tables</a></li>
+                      <li><a href="#">Bar Cabinet</a></li>
+                      <li><a href="#">Bar Units</a></li>
+                      <li><a href="#">Bar Trolleys</a></li>
+                      <li><a href="#">Wine Racks  </a></li>
+                      <li><a href="#">Bar Stools</a></li>
+                      <li><a href="#">Modular Kitchen </a></li>
+                  </ul>
+               </div>
+               </div>  
+             </div>
+          </li>
+         <li><a href="#">Living</a></li>
+         <li><a href="#">Bedroom</a>
+          <div class="mega-box">
+            <div class="content">
+                <div class="rowone">
+                   <header>Sofas</header>  
+                   <ul class="mega-links">
+                       <li><a href="#">Sofas</a></li>
+                       <li><a href="#">1-Seater sofas</a></li>
+                       <li><a href="#">2-Seater Sofas</a></li>
+                       <li><a href="#">3-seater Sofas</a></li>
+                       <li><a href="#">Sofa Sets</a></li>
+                       <li><a href="#">Sectional Sofas</a></li>
+                       <li><a href="#">Sofa cum beds  </a></li>
+                       <li><a href="#">Recliners</a></li>
+                       <li><a href="#">Sofa spa </a></li>
+                   </ul>
+                </div>
+             <div class="rowone">
+               <header>Sofas</header>  
+               <ul class="mega-links">
+                   <li><a href="#">Sofas</a></li>
+                   <li><a href="#">1-Seater sofas</a></li>
+                   <li><a href="#">2-Seater Sofas</a></li>
+                   <li><a href="#">3-seater Sofas</a></li>
+                   <li><a href="#">Sofa Sets</a></li>
+                   <li><a href="#">Sectional Sofas</a></li>
+                   <li><a href="#">Sofa cum beds  </a></li>
+                   <li><a href="#">Recliners</a></li>
+                   <li><a href="#">Sofa spa </a></li>
+               </ul>
+             </div> 
+             
+             <div class="rowone">
+               <header>Sofas</header>  
+               <ul class="mega-links">
+                   <li><a href="#">Sofas</a></li>
+                   <li><a href="#">1-Seater sofas</a></li>
+                   <li><a href="#">2-Seater Sofas</a></li>
+                   <li><a href="#">3-seater Sofas</a></li>
+                   <li><a href="#">Sofa Sets</a></li>
+                   <li><a href="#">Sectional Sofas</a></li>
+                   <li><a href="#">Sofa cum beds  </a></li>
+                   <li><a href="#">Recliners</a></li>
+                   <li><a href="#">Sofa spa </a></li>
+               </ul>
+            </div>
+
+            <div class="rowone">
+               <header>Sofas</header>  
+               <ul class="mega-links">
+                   <li><a href="#">Sofas</a></li>
+                   <li><a href="#">1-Seater sofas</a></li>
+                   <li><a href="#">2-Seater Sofas</a></li>
+                   <li><a href="#">3-seater Sofas</a></li>
+                   <li><a href="#">Sofa Sets</a></li>
+                   <li><a href="#">Sectional Sofas</a></li>
+                   <li><a href="#">Sofa cum beds  </a></li>
+                   <li><a href="#">Recliners</a></li>
+                   <li><a href="#">Sofa spa </a></li>
+               </ul>
+            </div>
+
+            <div class="rowone">
+               <header>Sofas</header>  
+               <ul class="mega-links">
+                   <li><a href="#">Sofas</a></li>
+                   <li><a href="#">1-Seater sofas</a></li>
+                   <li><a href="#">2-Seater Sofas</a></li>
+                   <li><a href="#">3-seater Sofas</a></li>
+                   <li><a href="#">Sofa Sets</a></li>
+                   <li><a href="#">Sectional Sofas</a></li>
+                   <li><a href="#">Sofa cum beds  </a></li>
+                   <li><a href="#">Recliners</a></li>
+                   <li><a href="#">Sofa spa </a></li>
+               </ul>
+            </div>
+
+            <div class="rowone">
+               <header>Sofas</header>  
+               <ul class="mega-links">
+                   <li><a href="#">Sofas</a></li>
+                   <li><a href="#">1-Seater sofas</a></li>
+                   <li><a href="#">2-Seater Sofas</a></li>
+                   <li><a href="#">3-seater Sofas</a></li>
+                   <li><a href="#">Sofa Sets</a></li>
+                   <li><a href="#">Sectional Sofas</a></li>
+                   <li><a href="#">Sofa cum beds  </a></li>
+                   <li><a href="#">Recliners</a></li>
+                   <li><a href="#">Sofa spa </a></li>
+               </ul>
+            </div>
+            </div>  
+          </div>
+
+
+
+          
+        </li>
+         <li><a href="#">Kids Room</a></li>
+         <li><a href="#">Mattresses</a>
+          <div class="mega-box">
+            <div class="content">
+                <div class="rowone">
+                   <header>Sofas</header>  
+                   <ul class="mega-links">
+                       <li><a href="#">Sofas</a></li>
+                       <li><a href="#">1-Seater sofas</a></li>
+                       <li><a href="#">2-Seater Sofas</a></li>
+                       <li><a href="#">3-seater Sofas</a></li>
+                       <li><a href="#">Sofa Sets</a></li>
+                       <li><a href="#">Sectional Sofas</a></li>
+                       <li><a href="#">Sofa cum beds  </a></li>
+                       <li><a href="#">Recliners</a></li>
+                       <li><a href="#">Sofa spa </a></li>
+                   </ul>
+                </div>
+             <div class="rowone">
+               <header>Sofas</header>  
+               <ul class="mega-links">
+                   <li><a href="#">Sofas</a></li>
+                   <li><a href="#">1-Seater sofas</a></li>
+                   <li><a href="#">2-Seater Sofas</a></li>
+                   <li><a href="#">3-seater Sofas</a></li>
+                   <li><a href="#">Sofa Sets</a></li>
+                   <li><a href="#">Sectional Sofas</a></li>
+                   <li><a href="#">Sofa cum beds  </a></li>
+                   <li><a href="#">Recliners</a></li>
+                   <li><a href="#">Sofa spa </a></li>
+               </ul>
+             </div> 
+             
+             <div class="rowone">
+               <header>Sofas</header>  
+               <ul class="mega-links">
+                   <li><a href="#">Sofas</a></li>
+                   <li><a href="#">1-Seater sofas</a></li>
+                   <li><a href="#">2-Seater Sofas</a></li>
+                   <li><a href="#">3-seater Sofas</a></li>
+                   <li><a href="#">Sofa Sets</a></li>
+                   <li><a href="#">Sectional Sofas</a></li>
+                   <li><a href="#">Sofa cum beds  </a></li>
+                   <li><a href="#">Recliners</a></li>
+                   <li><a href="#">Sofa spa </a></li>
+               </ul>
+            </div>
+
+            <div class="rowone">
+               <header>Sofas</header>  
+               <ul class="mega-links">
+                   <li><a href="#">Sofas</a></li>
+                   <li><a href="#">1-Seater sofas</a></li>
+                   <li><a href="#">2-Seater Sofas</a></li>
+                   <li><a href="#">3-seater Sofas</a></li>
+                   
+               </ul>
+            </div>
+
+            <div class="rowone">
+               <header>Sofas</header>  
+               <ul class="mega-links">
+                   <li><a href="#">Sofas</a></li>
+                   <li><a href="#">1-Seater sofas</a></li>
+                   <li><a href="#">2-Seater Sofas</a></li>
+                   <li><a href="#">3-seater Sofas</a></li>
+                   <li><a href="#">Sofa Sets</a></li>
+                   <li><a href="#">Sectional Sofas</a></li>
+                   <li><a href="#">Sofa cum beds  </a></li>
+                   <li><a href="#">Recliners</a></li>
+                   <li><a href="#">Sofa spa </a></li>
+               </ul>
+            </div>
+
+            <div class="rowone">
+               <header>Sofas</header>  
+               <ul class="mega-links">
+                   <li><a href="#">Sofas</a></li>
+                   <li><a href="#">1-Seater sofas</a></li>
+                  
+                   <li><a href="#">Sofa Sets</a></li>
+                   <li><a href="#">Sectional Sofas</a></li>
+                   <li><a href="#">Sofa cum beds  </a></li>
+                   <li><a href="#">Recliners</a></li>
+                   <li><a href="#">Sofa spa </a></li>
+               </ul>
+            </div>
+            </div>  
+          </div>
+        </li>
+         <li><a href="#">Decor</a></li>
+         <li><a href="#">Lightings</a></li>
+         <li><a href="#">Furnishings  </a></li>
+         <li><a href="#">Appliances</a></li>
+         <li><a href="#">Modular Furniture</a></li>
+     </ul>   
+    </div>
+</nav>
+
+
+   
+</div>  
+
+<div class="main">
+
+    <div class="nav">
+        <div id="head">
+            <div id="head-clip">
+                <h4>ALL SOFAS</h4>
+            </div>
+        </div>
+        <div id="head-categ">
+            <div id="head-cate-flex">
+                <div>
+                    <div class="head-cate-card">
+                        <div><div><img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Fur_1_Seater_Sofas_27.jpg"/></div></div>
+                        <div><h5>1 Seater Sofas</h5></div>
+                        <div><h5>709 Options</h5></div>
+                    </div>
+                    <div class="head-cate-card">
+                        <div><div><img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Fur_2_Seater_Sofas_27.jpg" /></div></div>
+                        <div><h5>2 Seater Sofas</h5></div>
+                        <div><h5>757 Options</h5></div>
+                    </div>
+                    <div class="head-cate-card">
+                        <div><div><img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Fur_3_Seater_Sofas_27.jpg" /></div></div>
+                        <div><h5>3 Seater Sofas</h5></div>
+                        <div><h5>897 Options</h5></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dash">
+
+        <div class="blank"></div>
+        <div class="outer-spaced">
+            <div class="sort-div">
+            </div>
+        </div>
+        <div class="outer-spaced">
+            <div></div>
+            <div class="main-dash-content-filter">
+                <div>
+                    <div>
+                        <span>Home</span><br/>
+                        <span>> Furniture</span><br />
+                        <span>> Sofas & Loungers</span><br />
+                        <span>> Sofas</span><br />
+                    </div>
+                    <div>
+                        <h2>APPLY FILTER</h2>
+                    </div>
+                    <div>
+                        <h4>PEPPERFRY BRANDS</h4>
+                        <br />
+                        <input type="checkbox" onclick="sortLH()" ><span>No</span><span></span>(1298)</span><br />
+                        <input type="checkbox" onclick="sortHL()"><span>Yes</span><span>(1058)</span><br />
+                    </div>
+                    <div></div>
+                    <div class="flex-input">
+                        <h4>BRAND</h4>
+                        <div >
+                            <input type="checkbox" onclick="sortBrand()"><span>CasaCraft</span><span>(586)</span><br/>
+                            <input type="checkbox" onclick="sortBrand1()"><span>Woodsworth</span><span>(268)</span><br />
+                            <input type="checkbox" onclick="sortBrand2()"><span>Durian</span><span>(183)</span><br />
+                            <input type="checkbox" onclick="sortBrand3()"><span>Furnitech</span><span>(126)</span><br />
+                            <input type="checkbox" onclick="sortBrand4()"><span>Urban Living</span><span>(102)</span><br />
+                        </div>
+                    </div>
+                    <div class="flex-input">
+                        <h4>PRICE</h4>
+                        <div>
+                            <input type="checkbox" onclick="sortPrice20()"><span>Under ₹ 20,000</span><span>(204)</span><br />
+                            <input type="checkbox" onclick="sortPrice40()"><span>₹ 20,000 to ₹ 40,000</span><span>(783)</span><br />
+                            <input type="checkbox" onclick="sortPrice60()"><span>Over ₹ 40,000</span><span>(278)</span><br />
+                        </div>
+                    </div>
+                    <div class="flex-input">
+                        <h4>PRIMARY MATERIAL</h4>
+                        <div>
+                            <input type="checkbox"><span>Fabric</span><span>(586)</span><br />
+                            <input type="checkbox"><span>Leatherette</span><span>(268)</span><br />
+                            <input type="checkbox"><span>Velvet Fabric</span><span>(183)</span><br />
+                            <input type="checkbox"><span>Sheesham Wood</span><span>(126)</span><br />
+                            <input type="checkbox"><span>Polyester</span><span>(102)</span><br />
+                        </div>
+                    </div>
+                    <div class="flex-input">
+                        <h4>CLEARANCE SALE</h4>
+                        <div>
+                            <input type="checkbox"><span>Yes</span><span>(71)</span><br />
+                            <input type="checkbox"><span>No</span><span>(39)</span><br />
+                        </div>
+                    </div>
+                    <div class="flex-input">
+                        <h4>DISCOUNT</h4>
+                        <div>
+                            <input type="checkbox"><span>10% and Above</span><span>(1258)</span><br />
+                            <input type="checkbox"><span>20% and Above</span><span>(1169)</span><br />
+                            <input type="checkbox"><span>30% and Above</span><span>(966)</span><br />
+                            <input type="checkbox"><span>40% and Above</span><span>(700)</span><br />
+                            <input type="checkbox"><span>50% and Above</span><span>(100)</span><br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-dash-content-card">
+                <div>
+                    <div id="main-card">
+                        
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+
+    </div>
+    <div class="content"></div>
+
+</div>
+
+
+
+
+
+    
+</body>
+</html>
+<script src="allSofas.js"></script>

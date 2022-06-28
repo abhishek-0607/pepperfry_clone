@@ -1,0 +1,127 @@
+#about-us{
+width: 100%; 
+background-color: rgb(245,245,245);
+font-family: 'Fira Sans',sans-serif;
+}
+
+#banner-section{ 
+    padding: 1.5% 6% 0% 6%; 
+}
+
+.row{
+    width:100%;  
+}
+
+#peppery-fact{
+    padding: 0% 6% 0% 6%; 
+}
+ 
+ .heading{
+     padding: 0.5% 0% 0.5% 0%;
+     text-align: center;
+     font-size: 3.9VH; 
+     color: #535353;
+ }
+ #facts{
+    padding: 0% 10% 0% 10%;  
+    width:80%  ; 
+    
+ }
+
+  #container-aboutUs{
+    display: grid;
+    grid-template-columns: 36% 25% 36%; 
+    grid-gap:0.9%;
+    
+    }  
+    
+    #col1{
+        display: flex;
+        flex-direction: column; 
+        grid-gap:0.5%;
+    }
+  
+    .div-col1{
+        flex-basis: 31.3%; 
+        display: flex;
+        flex-direction: row;
+    }
+
+    #div1{
+       padding-left:28%;
+       flex-basis: 100%;
+    }
+
+    #div1>img{
+        width:100%;
+    }
+    
+    #div21{  
+        flex-basis: 40%;
+    }
+
+    #div21>img{ 
+        width:100%;
+    }
+    #div22{
+        margin-left: 1.5%;
+        flex-basis: 58%;
+    }
+
+    #div3{
+         padding-left: 55%;
+         flex-basis: 45%;
+    }
+
+    #col2{
+        display: flex;
+        flex-direction: column; 
+        gap:2%;
+    }
+
+   .div-col2{
+       flex-basis: 45%; 
+    }
+
+    #div1-col2{
+        padding-top:12%;  
+    }
+
+    #div1-col2>img{
+        width:100%;
+    }
+    
+  #div2-col2{  
+      margin-top: -12%;
+  }
+    #div2-col2>img{
+        width:100%;
+    }
+     
+    #col3{
+        display: flex;
+        flex-direction: column; 
+        gap:0.5%;
+    }
+    .div-col3{
+        flex-basis: 31.3%; 
+        display: flex;
+        flex-direction: row;
+        gap:2%;
+    }
+    #div11-col3{
+        flex-basis: 50%;
+    }
+     
+    #div12-col3{
+        padding-top: 20%;
+        flex-basis: 50%;
+    }
+    #div2-col3{
+        padding-top:0%;
+    }
+    #div3-col3{
+        padding-top:1%;
+    }
+    
+    

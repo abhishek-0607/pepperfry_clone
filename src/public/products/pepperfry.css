@@ -1,0 +1,250 @@
+
+/* css files for carousel effect */
+
+.carousel {
+    overflow: hidden;
+    height: auto;
+    position: relative;
+  }
+  #slide{
+      height: auto;
+  }
+  
+  .carousel .carousel__item,
+  .carousel .carousel__item--hidden {
+    display: none;
+  }
+  
+  .carousel .carousel__item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel .carousel__item--visible {
+    display: block;
+    animation: fadeVisibility 0.1s;
+  }
+  
+  .carousel .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #carousel__button--1,#carousel__button--2,#carousel__button--3,#carousel__button--4,#carousel__button--5 {
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    color: transparent;
+    background-color: grey;
+    width: 12px;
+    margin-left: 10px;
+    height: 12px;
+  }
+  #carousel__button--1{
+      margin-left: 0px;
+  }
+  
+  .carousel__actions{
+      display: flex;
+      justify-content: center;
+  }
+  
+  @keyframes fadeVisibility {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0.8;
+      transform: opacity linear;
+    }
+  }
+  
+  
+  /* carousel ends here */
+  
+  /* banner besides carousel starts from here  */
+  
+  
+  body{
+      padding: 0px;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      background-color: #fff;
+  }
+  div{
+      display: block;
+  }
+  #ban{
+      display: flex;
+      justify-content: space-between;
+      background-color: transparent;
+      flex-direction: row;
+      padding-left: 8%;
+      padding-right: 8%;
+      margin-top: 125px;
+  }
+  
+  .mainbanner{
+      background-color: transparent;
+      background: cover;
+      width: 66%;
+      height: auto;
+  }
+  .mainbanner > #mbanner > img{
+      opacity: 1;
+      background: cover;
+      width: 100%;
+      max-height: 812px;
+  }
+  #mbanner{
+      background: cover;
+      height: auto;
+  }
+  #banner{
+      width: 32%;
+      background-color: transparent;
+      align-self: end;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 66.5vh;
+  }
+  #banner > img{
+      width: 100%;
+      height:auto;
+  }
+  
+  /* banner ends and register section starts */
+  
+  #registernow{
+      max-width: 85%;
+      font-family: Fira Sans;
+      font-size: 14px;
+      color: black;
+      font-weight: bold;
+      text-align: right;
+  }
+  #registernow > p > a{
+      cursor: pointer;
+      color: #f16521;
+      font-weight: bold;
+  }
+  #registernow > img{
+      width: 100%;
+  }
+  
+  /* registration section ends and deliver banner starts */
+  
+  #safedeliver{
+      max-width: 85%;
+  }
+  #safedeliver > img{
+      width: 100%;
+  }
+  
+  /* deliver banner ends and offersection starts */
+  
+  .offerpage, .safedeliver, .register_now, .vibes{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  #offers{
+      max-width: 85%;
+      font-family: 'Hammersmith One', sans-serif;
+      font-size: 20px;
+  }
+  h5, h6{
+      font-family: 'Hammersmith One', sans-serif;
+      margin: 0px;
+      margin-left: 0px;
+      margin-top: 30px;
+      font-weight: normal;
+      font-size: 20px;
+  }
+  p{
+      font-size: 14px;
+      font-family: 'Fira Sans', sans-serif;
+      margin: 5px, 0px;
+  }
+  h6{
+      font-family: 'Fira Sans', sans-serif;
+      color: #969696;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 0px;
+      margin-bottom: 14px;
+  
+  }
+  #offers > div{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+  }
+  #offers > div > div{
+      max-width: 15%;
+  }
+  #offers > div > div > img{
+      width: 100%;
+  }
+  
+  /* the grid section of various types of furniture starts here  */
+  
+  .vibes{
+      width: 100%;
+      font-family: 'Hammersmith One', sans-serif;
+      font-size: 20px;
+      background-color: #f3f5f7;
+  }
+  #vibes{
+      max-width: 85%;
+  }
+  #vibes01{
+      display: flex;
+      justify-content: center;
+  }
+  #vibes1{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1%;
+      justify-content: space-between;
+  }
+  #vibes1 > div {
+      background-color: #fff;
+      box-shadow: -1px 0px 3px 1px #e7e7e7;
+      width: 95%;
+      padding: 2%;
+      font-family: 'Hammersmith One', sans-serif;
+      font-size: 12px;
+  
+  }
+  #vibes1 > div > a > img{
+      height: 3vw;
+  }
+  #vibes1 > div a:nth-of-type(2n) img{
+      width: 100%;
+      height: 18vw;
+  }
+  #vibes1 > div > div{
+      font-family: Fira Sans;
+      margin: 8px;
+      font-weight: 700;
+  }
+  #vibes1 > div > div >span{
+      font-family: sans-serif;
+      font-weight: 550;
+  
+  }
+  #vibes1 > div > div > a{
+      cursor: pointer;
+      color: #14a9cc;
+  }
+  
+  /* grid section ends here */
+  
+  /* Home page from my sides(rinku) ends */

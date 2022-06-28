@@ -1,0 +1,85 @@
+
+ <!DOCTYPE html>
+ <html>
+     <head>
+     <title>Register Page</title>
+     <link rel="stylesheet" href="/static/users/signUpPage.css">
+     </head>
+ 
+     <body>
+         
+         <div class="mainPage">
+ 
+             
+             <div class="left">
+                 <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/2021-reg-popup-banner_2x-31-may.jpg" alt=""/>
+              </div>
+ 
+              <div class="right">
+        
+                 <div class="rightUp">
+                     <div class="rightInner">
+                         
+                     <form id="myform " action="http://localhost:2345/users" method="POST">
+                        <div class="container">
+                            <div class="name">
+                             <label for="uname"></label>
+                             <input type="text" class="Input" id="uname" placeholder="First Name" name="uname" required>
+                             
+                         </div>
+                        </div>
+ 
+                     <div class="container">
+                         <div class="name">
+                             <label for="num"></label>
+                             <input type="text" class="Input" id="num" placeholder="Last Name" name="num"  required>
+                         </div>
+                     </div>
+ 
+                     <div class="container">
+                         <div class="name">
+                             <label for="mail"></label>
+                             <input type="text" class="Input" id= "mail"placeholder="Email" name="mail" required>
+                         </div>
+                     </div>
+ 
+                     <div class="container">
+                         <div class="name">
+                             <label for="psw"></label>
+                             <input type="password" class="Input"id="psw" placeholder="Password" name="psw" required>
+                         </div>
+                         </div> 
+                      <span  style="color: black; font-size: 12px;font-weight: 300;margin-left: 9px;font-family: 'Fira Sans',sans-serif;">By registering you agree to our  <a href="#" style="color: black;font-size: 12px; font-weight: 300;font-family: 'Fira Sans',sans-serif;">Terms & Conditions</a></span>
+                         <button onclick="signup()" type="submit">REGISTER</button>
+                       </form>
+                     </div>
+                </div>
+ 
+                
+ 
+                <div class="rightdown">
+                    <div class="rightdown-1"> 
+                        <a class="link" href="/users/login" style="color: #f16521; font-family: 'Fira Sans', sans-serif;">Existing User? Log In</a>
+                    </div>
+                    <div class="rightdown-2">
+                        <span class = "social">OR Continue with</span>
+ 
+                       
+                        <a class="social-image" href="">
+                            <img src="https://ii1.pepperfry.com/images/social_login_fb_2x.png"/>
+                        </a>
+                     
+                        <a class="social-image" href="">
+                            <img src="https://ii1.pepperfry.com/images/social_login_google_2x.png"/>
+                        </a>
+                    </div>
+ 
+ 
+                </div>
+              </div>
+         </div>
+     </body>
+ </html>
+ 
+ 
+ <script src="/static/users/signUpPage.js"></script>

@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Fira Sans", sans-serif;
+    font-weight:500;
+  
+}
+
+#container{
+    width:100%;
+    margin:auto;
+}
+#header{
+    width:90%;
+    margin:auto;
+    display:flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding:3VH;
+}
+/* #headings{
+     
+    margin:10px 300px; 
+   
+} */
+/* #headings h3{
+    margin-top:10px;
+} */
+#headings #cart img{
+    width:20px;
+}
+
+#cart{
+    margin-right:70px;
+    margin-top:10px;
+}
+
+#headings #welcome{
+    margin-left:100px;
+    font-size:25px;
+}
+#container #row2{
+    width:90%;
+    margin:auto;
+   margin-top:15px;
+}
+
+#content{
+    display:flex;
+    width: 90%;
+    margin:auto;
+
+}
+#content #content1{
+    width:65%;
+    margin-right:5%;
+    margin-top:20px;
+}
+#content #content2{
+    width:30%;
+    margin-top:20px; 
+    background-color:rgb(245,245,245)
+}
+#pin{
+    display:flex;
+   padding:10px;
+   background-color: rgb(245,245,245);
+
+}
+#pin1{
+    display:flex;
+    align-items: center;
+}
+#content #content1 #pin #pin1 img{
+    width:20px;
+}
+#pin input{
+    margin-left:20px;
+    height: 20px;
+    padding: 10px;
+}
+
+#pin button{
+    background-color: black;
+    color:white;
+    border: none;
+    padding: 10px;
+    width: 50px;
+
+}
+#green{
+    font-size:15px;
+    margin-top: -20px;
+   
+}
+#green #title{
+    width:50%;
+    margin:10px;
+}
+.imageDiv{
+    width:15%;
+    margin-right: 2VW;
+}
+.imageDiv>img{
+    width:100%;
+    height:15VH;
+}
+.container{
+    display: flex;
+    flex-direction: row; 
+    border: 1px solid rgb(231,231,231);
+    padding:5VH 2vh;
+}
+.details{
+    margin-right: 5VW;
+   
+}
+#green #title #month{
+    color:orangered;
+    margin:10px 0px;
+}
+#deliver{
+    display:flex;
+}
+#deliver #calender img{
+    width:20px;
+}
+#green #img img{
+    width: 120px;
+    height:120px;
+}
+
+#deliver #calender{
+    margin:10px;
+}
+#price{
+    width:50px;
+}
+#price #pbtn{
+    display:flex;
+    margin-bottom:20px;
+}
+#price #pbtn input{
+    width:28px;
+    height:28px;
+    padding:5px;
+}
+#price #pbtn button{
+    border:none;
+    margin:2px;
+    
+}
+#price #price1{
+    text-decoration: line-through;
+    margin-top:20px;
+}
+ #delete img{
+    width:20px;
+    margin:10px 40px;
+    
+
+}
+#coupon{
+    display:flex;
+    margin:10px 0px;
+    height:40px;
+}
+
+#coupon input{
+    width:80%;
+
+}
+#coupon button{
+    width:20%;
+    background-color:orangered;
+    color:white;
+    border: none;
+}
+.pricedata{
+    display:flex;
+
+}
+.pricedata p{
+    width:150px;
+    margin-top:10px;
+}
+
+.pricedata h4{
+    margin:0px 10px 5px 100px;
+}
+.pricedata3 h2{
+    width:100px;
+    margin:10px 10px 5px 50px;
+}
+.pricedata3{
+    display:flex;
+}
+#content2 {
+padding:2VW;
+font-size: 14px;
+background-color: rgb(245,245,245);
+    
+}
+#content2 p{
+    margin-top:10px;
+    
+}
+#order_button{
+    background-color:orangered;
+    color:white;
+    width:100%;
+    margin-top:10px;
+    height:40px;
+    border: none;
+}
+#emi p{
+    color:rgb(27, 157, 209);
+    font-size:14px;
+}
+#delivery{
+    font-size:14px;
+    font-style: italic;
+}
+

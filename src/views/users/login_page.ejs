@@ -1,0 +1,82 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <!-- <link rel="stylesheet" href="loginPage.css"> -->
+
+    <link rel="stylesheet" href="/static/users/login_page.css" />
+</head>
+
+<body>
+
+ 
+  <!-- <a href="/users/create">Dheeraj Bisht</a> -->
+    
+    <div class="loginPage">
+         
+        <div class="left_one">
+            <img src="https://ii1.pepperfry.com/images/new_login_modal_bg_2020.jpg" alt="" />
+        </div>
+
+        <div class="right_one">
+            
+            <div class="right_one_Up">
+                <div class="right_one_Inner">
+                    
+                    <form id="myform" action="/users" method="post" >
+ 
+                         
+                         <div class="block">
+                            <div class="names">
+                              
+                                <input type="email" class="input" id="mail" placeholder="Email" name="email" required>
+
+                            </div>
+                        </div>
+                         
+                        <div class="block">
+                            <div class="names">
+                               
+                                <input type="password" class="input" id="psw" placeholder="Password" name="password"
+                                    required>
+                            </div>
+                        </div>
+                  
+                    </form>
+                    <button onclick="login()">LOG IN</button>
+
+                    <a href="#" style="color: #f16521 ;font-size: 12px; font-weight: 300;font-family: 'Fira Sans',sans-serif;">Forgot Password</a></span>
+                </div>
+            </div>
+
+            
+
+            <div class="right_one_down">
+                <div class="right_one_down-1">
+                    <a class="link" href="/users/signup" style="color: #f16521; font-family: 'Fira Sans', sans-serif;">New to Pepperfry? Register Here</a>
+                </div>
+                <div class="right_one_down-2">
+                    <span class="media">OR Continue with</span>
+                   
+                    <a class="media-image" href="">
+                        <img src="https://ii1.pepperfry.com/images/social_login_fb_2x.png" />
+                    </a>
+                    
+                    <a class="media-image" href="">
+                        <img src="https://ii1.pepperfry.com/images/social_login_google_2x.png" />
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="/static/users/loginPage.js"></script>

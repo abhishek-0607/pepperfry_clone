@@ -1,0 +1,201 @@
+ *{
+    font-family: 'Fira Sans', sans-serif;
+ } 
+.cart{
+    display: flex;
+    flex-direction: column;
+    margin-left: 33%;
+    width: 33%;
+    box-shadow: 1px 2px 20px 7px #888;    
+   /* min-height: 80vh; */
+    margin-top:100px;
+    position: absolute;
+}
+
+.cart-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 80px;
+    padding: 2%;
+    font-size: 15px;
+}
+.pin-block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+input{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 11px;
+    height: 20px;
+    width: 20%;
+}
+input ~ a{
+    width: 48px;
+    padding: 3px;
+}
+input ~ a:hover{
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 20px;
+}
+
+input ~ a ~ div{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    transform: rotate(45deg);
+    text-align: center;
+    font-weight: lighter;
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+input ~ a ~ div:hover{
+    background-color: orangered;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.tabs span{
+    cursor: pointer;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tabs span:hover{
+    border: 1px solid white;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.bg_toggle{
+    border: 1px solid white;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+#cart-added{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    
+    padding: 2%;
+    margin: 50px solid black;
+}
+
+#cart-added2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+   
+    padding: 2%;
+    margin: 50px solid black;
+}
+
+#cart-added2>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 180px;
+}
+
+#cart-added2 > div div{
+    margin-top: 20px;
+}
+
+#cart-added2 > div div > button{
+    cursor: pointer;
+    width: 230px;
+    height: 35px;
+    border: 1.5px solid coral;
+    color: coral;
+    font-size: 13px;
+}
+
+#cart-added > div > div button{
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 550;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    background-color: orangered;
+    border: 2px solid orangered;
+    position: relative;
+    bottom: -10px;
+}
+
+#cart-added > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+
+}
+
+#cart-added>div>div>div>div{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
+    padding-left: 10px;
+
+}
+
+#cart-added>div>div>div>div>div>div>span{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#cart-added>div>div>div>div>div>div a{
+    font-size: 14px;
+    color: grey;
+    font-weight: 550;
+}
+
+#cart-added>div>div>div>div img{
+    border-radius: 7px;
+    width: 70%;
+}
+
+#cart-added>div>div>div>div img:hover{
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 1px 2px 20px 3px #888;    
+}
+
+#cart-added>div>div>div>div>div>div>a span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#cart-added>div>div>div>div>div>div>div span{
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+    text-decoration: line-through;
+}
+
+#cart-added>div>div>div>div>div>div>div btn{
+    font-size: 17px;
+    font-weight: bold;
+}
