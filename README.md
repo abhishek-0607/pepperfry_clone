@@ -1,6 +1,5 @@
-# Unit 3 Project 
 
-Clone of "www.pepperfry.com". 
+# Clone of "www.pepperfry.com". 
 
 This website, www.pepperfry.com ("Site", “Website”) is owned and operated by Trendsutra Platform Services Private Limited
 .
